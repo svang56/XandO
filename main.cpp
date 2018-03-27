@@ -57,14 +57,6 @@ int main()
         turn = 'X';
        }
     
-    for(int r = 0; r < 3; r++)
-    {
-        for(int c = 0; c < 3; c++)
-        {
-        cout<< board[r][c];
-        }
-        cout<<endl;
-    }
     }
     
     //1-A.  Assign the board location of row and column to the value of turn
@@ -74,6 +66,14 @@ int main()
     //1-C-1.  turn should be assigned the value 'X'
     
     cout<<"\nBOARD\n-----\n";
+    for(int r = 0; r < 3; r++)
+    {
+        for(int c = 0; c < 3; c++)
+        {cout <<board[r][c];
+        }
+        cout<<endl;
+        }
+        
     //TODO: Print the current board
     //Outline
     //1. Traverse through each row, calling the current row r

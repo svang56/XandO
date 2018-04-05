@@ -89,42 +89,95 @@ int main()
         playing = false;
         cout<<"Winner is "<<winner<<endl;
     }
+   if( board[0][1] == 'X' && board[1][1] == 'X' && board[2][1] == 'X')
+    {
+        winner = 'X';
+        playing = false;
+        cout<<"Winner is "<<winner<<endl;
+    }
+    if( board[0][2] == 'X' && board[1][2] == 'X' && board[2][2] == 'X')
+    {
+        winner = 'X';
+        playing = false;
+        cout<<"Winner is "<<winner<<endl;
+    }
+// these are the 3 verticals  X
     if(board[0][0] == 'X' && board[0][1] == 'X' && board[0][2] == 'X')
     {
         winner = 'X';
         playing = false;
         cout<<"Winner is "<<winner<<endl;
     }
-    if(board[0][0] == 'X' && board[1][1] == 'X' && board[2][2] == 'X')
+    if(board[1][0] == 'X' && board[1][1] == 'X' && board[1][2] == 'X')
     {
         winner = 'X';
         playing = false;
         cout<<"Winner is "<<winner<<endl;
     }
-
-    if( board[0][0] == 'O' && board[1][1] == 'O' && board[2][2] == 'O')
+    if(board[2][0] == 'X' && board[2][1] == 'X' && board[2][2] == 'X')
     {
-        winner = 'O';
+        winner = 'X';
         playing = false;
         cout<<"Winner is "<<winner<<endl;
-
     }
-    if(board[0][0] == 'O' && board[0][1] == 'O' && board[0][2] == 'O' )
+    //horizontal 3 X
+    if((board[0][0] == 'X' && board[1][1] == 'X' && board[2][2] == 'X') || (board[2][0] == 'X' && board[1][1] == 'X' && board[0][2] == 'X' ))
     {
-        winner = 'O';
+        winner = 'X';
         playing = false;
         cout<<"Winner is "<<winner<<endl;
-
-
     }
-    if( board[0][0] == 'O' && board[1][0] == 'O' && board[2][0] == 'O')
+    //diagonals for X
+
+     
+
+     if( board[0][0] == 'O' && board[1][0] == 'O' && board[2][0] == 'O')
     {
-        winner = 'O';
+        winner = 'X';
         playing = false;
         cout<<"Winner is "<<winner<<endl;
-
-
     }
+   if( board[0][1] == 'O' && board[1][1] == 'O' && board[2][1] == 'O')
+    {
+        winner = 'X';
+        playing = false;
+        cout<<"Winner is "<<winner<<endl;
+    }
+    if( board[0][2] == 'O' && board[1][2] == 'O' && board[2][2] == 'O')
+    {
+        winner = 'X';
+        playing = false;
+        cout<<"Winner is "<<winner<<endl;
+    }
+// these are the 3 verticals  O
+
+    if(board[0][0] == 'O' && board[0][1] == 'O' && board[0][2] == 'O')
+    {
+        winner = 'X';
+        playing = false;
+        cout<<"Winner is "<<winner<<endl;
+    }
+    if(board[1][0] == 'O' && board[1][1] == 'O' && board[1][2] == 'O')
+    {
+        winner = 'X';
+        playing = false;
+        cout<<"Winner is "<<winner<<endl;
+    }
+    if(board[2][0] == 'O' && board[2][1] == 'O' && board[2][2] == 'O')
+    {
+        winner = 'X';
+        playing = false;
+        cout<<"Winner is "<<winner<<endl;
+    }
+    //horizontal 3 O
+
+     if((board[0][0] == 'O' && board[1][1] == 'O' && board[2][2] == 'O') || (board[2][0] == 'O' && board[1][1] == 'O' && board[0][2] == 'O' ))
+    {
+        winner = 'X';
+        playing = false;
+        cout<<"Winner is "<<winner<<endl;
+    }  
+    //diagonals for O
 
   }while( playing );
     
